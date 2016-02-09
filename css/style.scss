@@ -578,8 +578,12 @@ ul {
     		margin-right: auto
 			}
 
-			li {
+			ul {
 				list-style-type: disc;
+			}
+			
+            		ol {
+				list-style-type: decimal;
 			}
 
 			blockquote {
