@@ -1,15 +1,19 @@
 ---
 ---
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,700);
-@import url(http://fonts.googleapis.com/css?family=Montserrat);
-@import url(http://fonts.googleapis.com/css?family=Anonymous+Pro:400,700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,700);
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro:400,700);
 
 /* Colours */
 $twitter:        #6dabda;
 $linkedin:       #2b77b1;
-$google-plus:    #c95644;
+$xing:           #006567;
+$google-scholar: #c95644;
+$facebook:       #365899;
 $github:         #f6c2a4;
 $stack-overflow: #c98b3b;
+$instagram:      #cd486b;
+$reddit:         #cee3f8;
 $rss:            #eea33a;
 
 $darker:         #21211E;
@@ -34,10 +38,9 @@ $screen-lg-min: 1200px;
 
 /* Globals */
 
-
 html {
 	height: 100%;
-	overflow-x: hidden; 
+	overflow-x: hidden;
 }
 
 body {
@@ -61,7 +64,7 @@ a:hover {
 }
 
 ul {
-    list-style-type: none;
+	list-style-type: none;
 }
 
 .navbar, .nav {
@@ -87,10 +90,10 @@ ul {
 }
 
 .clearfix:after {
-   content: " ";
-   display: block;
-   height: 0;
-   clear: both;
+	content: " ";
+	display: block;
+	height: 0;
+	clear: both;
 }
 
 .header {
@@ -185,8 +188,16 @@ ul {
 		color: $linkedin;
 	}
 
-	.fa-google-plus:hover {
-		color: $google-plus;
+	.fa-xing:hover {
+		color: $xing;
+	}
+
+	.fa-graduation-cap:hover {
+		color: $google-scholar;
+	}
+
+	.fa-facebook:hover {
+		color: $facebook;
 	}
 
 	.fa-github-alt:hover {
@@ -195,6 +206,14 @@ ul {
 
 	.fa-stack-overflow:hover {
 		color: $stack-overflow;
+	}
+
+	.fa-instagram:hover {
+		color: $instagram;
+	}
+
+	.fa-reddit-alien:hover {
+		color: $reddit;
 	}
 
 	.fa-rss:hover {
@@ -253,10 +272,10 @@ ul {
 			margin-top: -20px;
 		}
 	}
-	
+
 	.subtitle {
 		font-family: 'Montserrat', sans-serif;
-		color: $red;
+		color: $orange;
 		margin-top: 0px;
 		padding-top: 15px;
 		font-size: 30px;
@@ -288,7 +307,7 @@ ul {
 	}
 
 	.author-text {
-		text-align: center;
+		text-align: justify;
 		margin-top: 30px;
 
 		b {
@@ -429,7 +448,7 @@ ul {
 
 	#search-input:focus {
 		border: none;
-  }
+	}
 
 	.content-panel {
 		padding-left: 10px;
@@ -582,23 +601,23 @@ ul {
 			img {
 				max-width: 100%;
 				padding: 10px;
-    		display: block;
-    		margin-left: auto;
-    		margin-right: auto
+				display: block;
+				margin-left: auto;
+				margin-right: auto
 			}
 
 			ul {
 				list-style-type: disc;
 			}
 
-            		ol {
+			ol {
 				list-style-type: decimal;
 			}
 
 			blockquote {
 				position: relative;
 				width: 100%;
-		    margin-left: -15px;
+				margin-left: -15px;
 				padding-right: 10px;
 				background-color: $darker;
 				color: white;
@@ -613,20 +632,20 @@ ul {
 				}
 
 				p {
-			    margin: 0;
-			    padding: 15px;
+					margin: 0;
+					padding: 15px;
 					z-index: 0;
 				}
 
 				:before {
-    			font-family: "Times New Roman";
+					font-family: "Times New Roman";
 					color: $light-medium;
-			    content: "“";
-			    position: absolute;
-			    top: 15px;
-			    left: 15px;
-			    font-size: 65px;
-			    font-weight: bold;
+					content: "“";
+					position: absolute;
+					top: 15px;
+					left: 15px;
+					font-size: 65px;
+					font-weight: bold;
 				}
 
 			}
@@ -636,8 +655,8 @@ ul {
 			}
 
 			.aligncenter {
-			    display: block;
-			    margin: 5px auto 5px auto;
+				display: block;
+				margin: 5px auto 5px auto;
 			}
 
 			figure.highlight, div.highlighter-rouge {
@@ -645,7 +664,6 @@ ul {
 				margin-left: -15px;
 				padding-right: 10px;
 				box-sizing: content-box;
-				white-space: nowrap;
 
 				@media (min-width: $screen-sm-min) {
 					margin-left: -30px;
@@ -848,8 +866,6 @@ ul {
 		margin-top: 20px;
 		margin-bottom: 20px;
 	}
-	
- 
 }
 
 .btn-categories {
@@ -887,18 +903,19 @@ ul {
 }
 
 table{
-    margin: 0 auto;
-    border-collapse: collapse;
-    border-spacing: 0;
-    border:2px solid $darker;;
+	margin: 0 auto;
+	border-collapse: collapse;
+	border-spacing: 0;
+	border:2px solid $darker;;
 }
 
 th{
-    padding: 2px;
-    border:2px solid $darker;;
+	padding: 2px;
+	border:2px solid $darker;;
 }
 
 td{
-    padding: 2px;
-    border:1px solid $dark-blue;;
+	padding: 2px;
+	border:1px solid $dark-blue;;
 }
+
