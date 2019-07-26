@@ -15,7 +15,7 @@ google_analytics: UA-144617686-1
 disqus_account:
 github_repository: https://github.com/comaniac/comaniac.github.io
 addthis_id:
-post_limit: 5
+post_limit: 3
 
 # Social usernames/URLs
 github_username: comaniac
