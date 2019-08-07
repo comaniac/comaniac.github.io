@@ -10,7 +10,7 @@ description: > # this means to ignore newlines until "baseurl:"
 baseurl: ""
 url: "http://comaniac.github.io"
 title_description: "Applied Scientist at AWS AI, Amazon"
-title_image: "https://avatars.io/facebook/comaniac/large"
+title_image: "https://i.imgur.com/sDf6XP3.jpg"
 google_analytics: UA-144617686-1
 disqus_account: hao-yu-cody
 github_repository: https://github.com/comaniac/comaniac.github.io
