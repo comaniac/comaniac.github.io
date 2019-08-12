@@ -9,8 +9,6 @@ description: > # this means to ignore newlines until "baseurl:"
   hyper-heuristic and policy gradient methods.
 baseurl: ""
 url: "http://comaniac.github.io"
-title_description: "Applied Scientist at AWS AI, Amazon"
-title_image: "https://i.imgur.com/sDf6XP3.jpg"
 google_analytics: UA-144617686-1
 disqus_account: hao-yu-cody
 github_repository: https://github.com/comaniac/comaniac.github.io
@@ -22,7 +20,7 @@ github_username: comaniac
 instagram_username: 
 reddit_username: 
 twitter_username: CodyHaoYu
-linkedin_link: https://www.linkedin.com/in/cody-hao-yu/
+linkedin_id: cody-hao-yu
 stackoverflow_link:
 xing_link:
 facebook_link: https://www.facebook.com/comaniac
