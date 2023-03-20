@@ -17,7 +17,7 @@ published: true
                  data-theme="dark"
                  data-vanity="{{ site.linkedin_id }}"
                  align="center">
-                <a class="LI-simple-link" href='https://www.linkedin.com/in/{{ site.linkedin_id }}?trk=profile-badge'>Hao Yu</a>
+                <h3><a class="LI-simple-link" href='https://www.linkedin.com/in/{{ site.linkedin_id }}?trk=profile-badge'>{{ site.title }}</a></h2>
             </div>
 
 <!--
@@ -44,7 +44,7 @@ published: true
         </div>
         <div class="col-md-12 main content-panel">
             <div class="articles">
-                <h2>Highlights</h2>
+                <h2>Recent Posts</h2>
                 <ul>
                     {% for post in site.posts | limit: site.post_limit %}
                     <li>
