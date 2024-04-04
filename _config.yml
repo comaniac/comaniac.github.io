@@ -2,11 +2,16 @@
 title: "(Cody) Hao Yu"
 email: TBA
 description: > # this means to ignore newlines until "baseurl:"
-  I joined Tensor Virtual Machine (tvm) in Amazon Web Service as an applied scientist since August 2019.
-  Prior to that, I got my Ph.D. degree from UCLA Computer Science in 2019. My research interest is 
-  1) raising an abstraction level for customized computing, and 
-  2) comprehensive design space exploration with several iterative approaches such as 
+  Seeking for a sweet spot between high risk, challenging but exciting research
+  and practical, impactful production. My journey starts by pursing Ph.D. at UCLA.
+  My research interest incluldes 1) raising an abstraction level for customized computing,
+  and 2) comprehensive design space exploration with several iterative approaches such as 
   hyper-heuristic and policy gradient methods.
+
+  After graduation, I joined Amazon Web Services to continue my research life. At AWS AI,
+  I was doing research related to Deep Learning Compiler (Apache TVM) and Machine Learning
+  System. Then I switched gear by joining BosonAI to make product-oriented LLM systems.
+  Now I am with Anyscale to continue making LLM system practical for production use cases.
 baseurl: ""
 url: "http://comaniac.github.io"
 google_analytics: UA-144617686-1
