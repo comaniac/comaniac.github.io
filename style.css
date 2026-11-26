@@ -1,0 +1,40 @@
+:root {
+  color-scheme: light;
+  --ink: #222c3a;
+  --blue: #3758a2;
+  --rule: #ced2d2;
+  --mono: "IBM Plex Mono", ui-monospace, monospace;
+  font-family: "Instrument Sans", system-ui, sans-serif;
+  background: #f8f8f3;
+  color: var(--ink);
+}
+* { box-sizing: border-box; }
+body { margin: 0; }
+main { width: min(880px, 88%); margin: auto; }
+header { padding: 32px 0 22px; border-bottom: 1px solid var(--rule); }
+a { color: inherit; text-decoration: none; }
+a:focus-visible { outline: 3px solid var(--blue); outline-offset: 3px; }
+.handle { font: 600 16px var(--mono); }
+.handle b, h1 span, footer span { color: var(--blue); }
+.intro { display: grid; grid-template-columns: 1.5fr 1fr; align-items: center; gap: 4%; margin: 52px 0; }
+h1 { font: normal clamp(3.4rem, 6.5vw, 5.5rem)/1.05 "Instrument Serif", Georgia, serif; letter-spacing: -.065em; margin: 0; }
+p { font-size: 1.1rem; line-height: 1.6; max-width: 40ch; color: #4f5964; }
+.drawing { background: radial-gradient(#b2becb 1px, transparent 1px) center / 12px 12px; }
+.drawing img { display: block; width: 100%; height: auto; }
+h2 { font: 600 .75rem var(--mono); text-transform: uppercase; letter-spacing: .12em; margin: 0 0 15px; }
+.row { display: grid; grid-template-columns: 1fr 1fr auto; align-items: center; gap: 12px; padding: 19px 4px; border-top: 1px solid var(--rule); }
+.row:last-child { border-bottom: 1px solid var(--rule); }
+.row strong { font-size: 1.4rem; letter-spacing: -.04em; font-weight: 550; }
+.row small, footer { font: .82rem var(--mono); color: #525e6c; }
+.row i { font: normal 1.4rem system-ui; color: var(--blue); }
+.row:hover { background: #edf0ef; color: var(--blue); }
+footer { padding: 25px 0 34px; text-align: right; }
+footer a:hover { text-decoration: underline; }
+@media (max-width: 620px) {
+  .intro { grid-template-columns: 1fr; margin: 32px 0; }
+  .drawing { width: min(100%, 300px); margin: 12px auto 0; }
+  .drawing img { width: 80%; margin: auto; }
+  .row { grid-template-columns: 1fr auto; gap: 4px; }
+  .row small { grid-column: 1; }
+  .row i { grid-column: 2; grid-row: 1 / 3; }
+}

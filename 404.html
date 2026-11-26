@@ -1,48 +1,15 @@
----
-layout: default
-title: 404
-permalink: /404.html
----
-
-<div class="container-fluid index error">
-  <div class="row">
-
-    <div class="col-md-12 content-panel articles">
-      <h1 class="header author-header">404</h1>
-
-      <div class="error-text">
-        Sorry but this page doesn't seem to exist.
-      </div>
-
-      <div class="error-text">
-        <a href="{{ site.baseurl }}/">Home</a> |
-        <a href="{{ site.baseurl }}/posts/">All Posts</a> |
-        <a href="{{ site.baseurl }}/search/">Search</a>
-      </div>
-
-      {% include social_links.html %}
-
-    </div>
-
-  </div>
-
-  <div class="content-panel related">
-    {% for post in site.posts limit:1 %}
-      <div class="related-header">
-        <a href="{{ site.baseurl }}{{ post.url }}">Suggested Article</a>
-      </div>
-      <div class="title">
-        <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-      </div>
-      <div class="excerpt">
-         {% if post.summary %}
-          {{ post.summary | strip_html | truncatewords:30 }}
-         {% else %}
-          {{ post.excerpt | strip_html | truncatewords:30 }}
-         {% endif %}
-        <a href="{{ site.baseurl }}{{ post.url }}">Continue Reading</a>
-      </div>
-    {% endfor %}
-  </div>
-
-</div>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Page not found · Cody Hao Yu</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body><main>
+  <header><a class="handle" href="/"><b>~/</b>comaniac</a></header>
+  <h1>Page not found<span>.</span></h1>
+  <p>This address may belong to the retired blog.</p>
+  <a class="row" href="/"><strong>Back to homepage</strong><i aria-hidden="true">→</i></a>
+</main></body>
+</html>

@@ -1,62 +1,29 @@
----
-layout: default
-published: true
----
-
-{% include make_smaller_titles.html %}
-
-<div class="container-fluid index">
-    <div class="row">
-
-        <div class="col-md-12 main content-panel">
-            <div class="badge-base LI-profile-badge"
-                data-version="v1"
-                data-locale="en_US"
-                data-size="large"
-                data-theme="dark"
-                data-type="HORIZONTAL"
-                data-vanity="{{ site.linkedin_id }}"
-                align="center">
-                <h3><a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/{{ site.linkedin }}?trk=profile-badge">{{ site.title }}</a></h3>
-            </div>
-<!--
-            <div class="gravatar">
-                <img src="{{ site.title_image }}" class="img-circle about-image" height="200" alt="{{ site.title }}" />
-            </div>
-
-            <h1 class="header author-header" itemprop="headline">{{ site.title }}</h1>
-            <div class="subtitle">
-                <h2> {{ site.title_description }} </h2>
-            </div>
--->
-            <div class="author-text">
-                {{ site.description }}
-            </div>
-            <!--
-                <div class="subtitle">
-                <a href="/projects"><h2>Projects</h2></a>
-                <nbsp><nbsp>   
-                <a href="/assets/Yury Voloshin Resume.pdf"><h2>Resume</h2></a>
-                </div>
-            -->
-            {% include social_links.html %}
-        </div>
-        <div class="col-md-12 main content-panel">
-            <div class="articles">
-                <h2>Recent Posts</h2>
-                <ul>
-                    {% for post in site.posts | limit: site.post_limit %}
-                    <li>
-                        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-                        <small class="hidden-xs">{{ post.date | date: "%B %-d, %Y" }}</small>
-                    </li>
-                    {% endfor %}
-                    <li>
-                        <i><a href="{{ site.baseurl }}/posts/" style="font-size: 16px;">all posts</a></i>
-                    </li>
-                </ul>
-            </div>
-        </div>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Cody Hao Yu works on machine learning systems and compilers. Find his code, publications, and professional background.">
+  <title>Cody Hao Yu · comaniac</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<main>
+  <header><a class="handle" href="/"><b aria-hidden="true">~/</b>comaniac</a></header>
+  <section class="intro" aria-labelledby="name">
+    <div>
+      <h1 id="name">Cody Hao Yu<span>.</span></h1>
+      <p>I work on machine learning systems and compilers, bringing research into production.</p>
     </div>
-
-</div>
+    <div class="drawing" aria-hidden="true"><img src="/chip.png" alt="" width="480" height="380"></div>
+  </section>
+  <nav aria-labelledby="profiles">
+    <h2 id="profiles">Find me online</h2>
+    <a class="row" href="https://github.com/comaniac"><strong>GitHub</strong><small>Code &amp; contributions</small><i aria-hidden="true">↗</i></a>
+    <a class="row" href="https://scholar.google.com/citations?user=jWRhmqoAAAAJ"><strong>Google Scholar</strong><small>Research &amp; publications</small><i aria-hidden="true">↗</i></a>
+    <a class="row" href="https://www.linkedin.com/in/cody-hao-yu/"><strong>LinkedIn</strong><small>Experience &amp; contact</small><i aria-hidden="true">↗</i></a>
+  </nav>
+  <footer><a href="https://github.com/comaniac/comaniac.github.io"><span aria-hidden="true">&lt;/&gt;</span> Site source</a></footer>
+</main>
+</body>
+</html>
