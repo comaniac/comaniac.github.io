@@ -1,8 +1,8 @@
 :root {
-  color-scheme: light;
+  color-scheme: light dark;
   font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
-  color: #232526;
-  background: white;
+  color: light-dark(#232526, #eceeed);
+  background: light-dark(white, #191b1d);
 }
 body { margin: 0; }
 main {
@@ -17,18 +17,20 @@ h1 {
   font-weight: 600;
   letter-spacing: -.045em;
 }
-.role { margin: .65rem 0 0; color: #54595c; line-height: 1.5; }
+.role { margin: .65rem 0 0; color: light-dark(#54595c, #bdc3c6); line-height: 1.5; }
 .intro { margin: 2rem 0 1.25rem; font-size: 1.125rem; line-height: 1.65; }
-a { color: #215b77; text-underline-offset: .2em; text-decoration-thickness: 1px; }
-a:hover { color: #122e3b; }
+a { color: light-dark(#215b77, #9ed4ed); text-underline-offset: .2em; text-decoration-thickness: 1px; }
+a:hover { color: light-dark(#122e3b, #d1edfa); }
 a:focus-visible { outline: 2px solid currentColor; outline-offset: 4px; }
-nav { display: flex; flex-wrap: wrap; gap: 0 1.4rem; }
-nav a { padding: .75rem 0; }
+#profiles { margin: 1.75rem 0 .35rem; }
+nav { display: flex; gap: .35rem; }
+nav a { display: grid; place-items: center; width: 44px; height: 44px; }
+nav svg { fill: currentColor; }
 footer {
-  border-top: 1px solid #e4e6e7;
+  border-top: 1px solid light-dark(#e4e6e7, #393d40);
   margin-top: 3rem;
   padding-top: 1.1rem;
-  color: #62676a;
+  color: light-dark(#62676a, #a7afb2);
   font-size: .85rem;
 }
 footer a { color: inherit; }
